@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaique Alef">
+    <title>Confirmação de Presença</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmação de Presença</h1>
+        
+        <form id="confirmForm" action="Local da action da api" method="POST">
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Quantos familiares vão acompanhar ?</label>
+                <select id="guests" name="guests" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <button type="submit">Confirmar Presença</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            Presença confirmada com sucesso! Obrigado!
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            Ocorreu um erro. Por favor, tente novamente.
+        </div>
+        <h3>Aviso:</h3><p>Após preencher o campo superior com seu nome, informe apenas o valor numérico que corresponde à quantidade de acompanhantes no campo destinado abaixo. Exemplo: '2' para dois convidados adicionais.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

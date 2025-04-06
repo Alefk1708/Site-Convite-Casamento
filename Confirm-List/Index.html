@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaique Alef">
+    <title>Lista de confirmação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de Confirmação de Presença</h1>
+
+    <div id="total">
+        <strong>Total de Pessoas Confirmadas:</strong> <span id="total-pessoas">0</span>
+    </div>
+
+    <!-- Botão para recarregar a página -->
+    <button onclick="reloadPage()">Recarregar Lista</button>
+
+    <h2>Lista de Confirmados</h2>
+    <table id="confirmados-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Acompanhantes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- A lista de confirmados será gerada aqui -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
